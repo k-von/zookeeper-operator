@@ -118,3 +118,7 @@ The following table lists the configurable parameters of the zookeeper chart and
 | `initContainers` | Init Containers to add to the zookeeper pods | `[]` |
 | `volumes` | Named volumes that may be accessed by any container in the pod | `[]` |
 | `volumeMounts` | Customized volumeMounts for zookeeper container that can be configured to mount volumes to zookeeper container | `[]` |
+
+## High Availability Configuration
+
+To allow for a more fail over safe and high-availability deployment setup the value of `pod.affinity` can be set so Zookeeper pods do not end up on the same node.  Therefore, distributing the risk of failure over a number of nodes as required. 
