@@ -1,5 +1,5 @@
 replicas: 3
-maxUnavailableReplicas:
+maxUnavailableReplicas: 1
 
 image:
   repository: adobe/zookeeper
